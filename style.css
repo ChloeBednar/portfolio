@@ -191,7 +191,7 @@ body {
 
 .image-item2 {
   text-align: center;
-  width: 930px;          /* SAME width for every image */
+  width: 965px;          /* SAME width for every image */
 }
 
 .project-image2 {
@@ -201,8 +201,26 @@ body {
   border-radius: 10px;
 }
 
-.image-description2 {
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-  color: #c7c7c7;
+.image-item3 {
+  text-align: center;
+  width: 298px;          /* SAME width for every image */
 }
+
+.project-image3 {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;   /* fills the box, crops edges */
+  border-radius: 10px;
+}
+
+/* For Lists */
+.project-bullets {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+.project-bullets li {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
