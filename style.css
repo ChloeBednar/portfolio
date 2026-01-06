@@ -216,8 +216,14 @@ body {
 ===================== */
 @media (max-width: 768px) {
   .navbar {
-    padding: 12px;
+    padding: 16px;
   }
+
+  body {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
 
   .nav-icons {
     text-align: center;
