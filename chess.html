@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" href="tool2.svg" type="image/svg+xml">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>5-Axis CNC Chess Set</title>
-  <link rel="stylesheet" href="../style.css" />
+  <title>Chloe Bednar - 5-Axis CNC Chess Set</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -29,27 +30,55 @@
     <div class="project-section">
       <h2>Project Overview</h2>
       <p class="project-text">
-        This project stemmed from my interest in the aesthetics of chess and refining my CNC machining skills.I designed and machined a full chess set and board using a both a 3-axis (Openbuilds CNC) and 5-axis CNC mill (V1 PocketNC). This project allowed me to enhance my skills in CAD modeling, CAM programming, and CNC operation. I overcame many hurdles throughout this project, most notably overcoming the learning curve of the Kickstarter CNC machine in my shop, problem solving machining limitations and tolerances, and creating innovative solutions for piece storage, design, and functionality.
+        This project stemmed from my interest in the aesthetics of chess and refining my CNC machining skills. I designed and machined a full chess set and board using both a 3-axis (Openbuilds CNC) and 5-axis CNC mill (V1 PocketNC). This project allowed me to enhance my skills in CAD modeling, CAM programming, and CNC operation. I overcame many hurdles throughout this project, most notably overcoming the learning curve of the Kickstarter CNC machine in my shop, problem solving machining limitations and tolerances, and creating innovative solutions for piece storage, design, and functionality.
     </div>
 
   <!-- Image Row -->
   <div class="image-row">
   <div class="image-item">
-    <img src="../images/chess.png" class="project-image" alt="Finished Chess Board and Pieces">
+    <img src="chess.png" class="project-image" alt="Finished Chess Board and Pieces">
     <p class="image-description">Finished Chess Board and Pieces</p>
   </div>
 
   <div class="image-item">
-    <img src="../images/cncboard.png" class="project-image" alt="CNC Milling Chess Board">
+    <img src="cncboard.png" class="project-image" alt="CNC Milling Chess Board">
     <p class="image-description">CNC Milling Chess Board</p>
   </div>
 </div>
 
-<!-- Video Row-->
+<div class="project-section">
+    <h2>Design Choices and Features</h2>
+      <p class="project-text">
+        I let my creativity flow throughout this process and really just wanted to have fun with the design. I took inspiration for the dynamic aspect of gameplay from the "Wobble Chess" set, which I always wanted as a kid, but as an adult, I realized I can just make one, and nonetheless, make one that's better. I gained experience creating meshes in Fusion360 and implementing the CAM software for both 5-Axis and 3-Axis CNC applications throughout the process.
+    </div>
+
+<!-- Image Row -->
+  <div class="image-row">
+  <div class="image-item3">
+    <img src="chessfinal5.png" class="project-image3" alt="Finished Chess Board and Pieces">
+    <p class="image-description">Finished Chess Board and Pieces</p>
+  </div>
+
+  <div class="image-item3">
+    <img src="chessfinal6.png" class="project-image3" alt="Hidden Storage Underneath Board">
+    <p class="image-description">Hidden Storage Underneath Board</p>
+  </div>
+
+  <div class="image-item3">
+    <img src="chessfinal7.png" class="project-image3" alt="Chess Board in 'Lifted' Position">
+    <p class="image-description">Chess Board in "Lifted" Position</p>
+  </div>
+  </div>
+
+<div class="project-section">
+      <p class="project-text">
+        My favorite aspect of this project was the hidden storage design. I wanted this project to have an ingenuitve system for housing the chess pieces as a focal point in the design, rather than a simple drawer. I gathered inspiration from the mechanism on push-to-open cupboards (the ones with no handles) and implemented that same hardware vertically between the chess board and the storage system so when the user presses down on the board, it then lifts to be removed to access the stored pieces.
+    </div>
+
 <div class="image-row">
-<div class="image-item">
+<div class="image-item2">
   <iframe
-    src="https://youtube.com/embed/KwkqKpci28A" class="project-image"
+    src="https://youtube.com/embed/KwkqKpci28A" class="project-image2"
     title="YouTube video player"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -57,6 +86,38 @@
   </iframe>
   <p class="image-description">Testing Push Mechanism on Chess Board</p>
 </div>
+</div>
+
+<div class="project-section">
+      <h2>Challenges and Obstacles</h2>
+      <p class="project-text">
+        My problem solving skills were truly put to the test in this project as I encountered many challenges along the way. Learning to operate a new 5-axis CNC machine was a steep learning curve, and I had to troubleshoot various technical issues that arose during the machining process. One of the main issues was understanding the tool length offset (TLO), which I had not previously had to manually calculate on a CNC machine and took a significant amount of time troubleshooting to catch my error and later master the process to machine with precision. Beyond the initial technical challenges, mass producing 64 complex components on a CNC required over 200 hours of machining time including initial trial and error, so optimizing toolpaths and part quality was of the essence knowing the next phase of the project was sanding out the imperfections.
+    </div>
+
+  <!-- Image Row -->
+  <div class="image-row">
+  <div class="image-item3">
+    <img src="scallop.png" class="project-image3" alt="Trial Piece with Scallop Marks">
+    <p class="image-description">Trial Piece with Scallop Marks</p>
+  </div>
+
+  <div class="image-item3">
+    <img src="cncpawn2.png" class="project-image3" alt="Revised Toolpath to Reduce Scallop Marks">
+    <p class="image-description">Revised Toolpath to Reduce Scallop Marks</p>
+  </div>
+
+  <div class="image-item3">
+    <img src="noscallop.png" class="project-image3" alt="Piece with Revised Milling Operation">
+    <p class="image-description">Piece with Revised Milling Operation</p>
+  </div>
+</div>
+
+<!-- Video Row-->
+  <div class="image-row">
+  <div class="image-item">
+    <img src="rook.png" class="project-image" alt="CNC Milling Rook Component">
+    <p class="image-description">CNC Milling Rook Component</p>
+  </div>
 
 <div class="image-item">
   <iframe
@@ -66,13 +127,32 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
-  <p class="image-description">CNC Milling Pawn Chess Piece</p>
+  <p class="image-description">First Iteration (Slow) CNC Milling Pawn Chess Piece</p>
 </div>
 </div>
-</main>
 
+<div class="project-section">
+    <p class="project-text">
+      Another significant hurdle of the project included designing a component of significant weight to act as the center of mass for the chess pieces to allow the pieces to wobble but inevitably stabilize upright. I went back and forth with ideas proving unfeasible given shop constraints, eventually landing on the (despite better judgement) idea of melting lead shot in a measuring spoon and filing it for a precise fit inside the milled component. It worked great!
+    </div>
+
+<!-- Image Row -->
+  <div class="image-row">
+  <div class="image-item">
+    <img src="lead.png" class="project-image" alt="Lead Weights">
+    <p class="image-description">Lead Weights for COM</p>
+  </div>
+
+  <div class="image-item">
+    <img src="assembly.png" class="project-image" alt="Assembly of Components for Each Piece">
+    <p class="image-description">Assembly of Components for Each Piece</p>
+  </div>
+</div>
+
+</main>
 </body>
 </html>
 
 
      
+
