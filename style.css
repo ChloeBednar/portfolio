@@ -156,11 +156,12 @@ body {
   margin-top: 0.5rem;
   font-size: 0.9rem;
   color: #c7c7c7;
+  text-align: center
 }
 
 /* Large images */
 .image-item2 {
-  width: min(960px, 100%); /* SAME width for every image */
+  width: min(965px, 100%); /* SAME width for every image */
   text-align: center
 }
 
@@ -180,6 +181,19 @@ body {
 .project-image3 {
   width: 100%;
   height: 220px;
+  object-fit: cover;   /* fills the box, crops edges */
+  border-radius: 10px;
+}
+
+/* Super Small images */
+.image-item4 {
+  /* text-align: center; */
+  width: min(216px, 100%); /* SAME width for every image */
+}
+
+.project-image4 {
+  width: 100%;
+  height: 165px;
   object-fit: cover;   /* fills the box, crops edges */
   border-radius: 10px;
 }
