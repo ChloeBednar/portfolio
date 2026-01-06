@@ -216,6 +216,8 @@ body {
   .navbar {
     padding: 16px;
     grid-template-columns: 1fr;
+    gap: 12px;
+    text-align: center;
   }
     /*
     grid-template-columns: 1fr;
