@@ -215,7 +215,6 @@ body {
 @media (max-width: 768px) {
   .navbar {
     padding: 16px;
-    grid-template-columns: 1fr;
   }
 
   .nav-icons {
