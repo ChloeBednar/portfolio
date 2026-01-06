@@ -211,6 +211,12 @@ body {
   line-height: 1.4;
 }
 
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
 /* =====================
    MOBILE
 ===================== */
@@ -218,12 +224,6 @@ body {
   .navbar {
     padding: 16px;
   }
-
-  body {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-}
 
   .nav-icons {
     text-align: center;
@@ -236,5 +236,27 @@ body {
 
   .project-image {
     height: 240px;
+  }
+}
+
+@media (max-width: 420px) {
+  /* NAVBAR FIX */
+  .navbar {
+    padding-inline: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* CONTENT */
+  .projects,
+  .project-page {
+    padding-inline: 16px;
+    grid-template-columns: 1fr;
+  }
+
+  /* Prevent text wrapping */
+  .navbar * {
+    white-space: nowrap;
   }
 }
