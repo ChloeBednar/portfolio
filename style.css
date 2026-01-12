@@ -60,6 +60,12 @@ body {
   height: 18px;
 }
 
+/* Harvard Icon Size */
+.harvard-icon {
+  width: 18px;
+  height: 18px;
+}
+
 /* GRID */
 .projects {
   display: grid;
