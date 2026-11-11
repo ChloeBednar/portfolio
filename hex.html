@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="../images/tool2.svg" type="image/svg+xml">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Optimized Hexacopter for Wildfire Rescue Missions</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<link rel="stylesheet" href="../style.css" />
+
+<style>
+  /* Spacing adjustments for this page only */
+
+  .project-page .text-row {
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .project-page .project-section {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  .project-page .project-text {
+    margin-bottom: 16px;
+  }
+
+  .project-page .project-text:last-child {
+    margin-bottom: 0;
+  }
+
+  .project-page .image-row {
+    margin-top: 12px;
+    margin-bottom: 36px;
+  }
+
+  .project-page .image-description {
+    margin-bottom: 0;
+  }
+</style>
+
+<body>
+
+<header class="navbar">
+  <a href="../index.html" class="nav-left">← Back</a>
+  <h1 class="nav-title">Chloe Bednar</h1>
+
+  <div class="nav-icons">
+    <a href="https://gocrimson.com/sports/womens-lacrosse/roster/chloe-bednar/31644"
+       target="_blank" rel="noopener noreferrer">
+      <img src="../images/h-removebg-preview.png"
+           alt="Harvard Athletics" class="harvard-icon">
+    </a>
+
+    <a href="https://www.linkedin.com/in/chloe-bednar-7382b7295"
+       target="_blank" rel="noopener noreferrer">
+      <img src="../images/linkedin.svg"
+           alt="LinkedIn" class="linkedin-icon">
+    </a>
+  </div>
+</header>
+
+<main class="project-page">
+
+  <!-- =========================
+       PROJECT TITLE & OVERVIEW
+  ========================== -->
+
+  <div class="text-row">
+
+    <div class="project-section">
+      <h1>Optimized Hexacopter for Wildfire Rescue Missions</h1>
+    </div>
+
+    <div class="project-section">
+      <h2>Project Overview</h2>
+
+      <p class="project-text">
+        As the Chief Engineer for the Harvard Undergraduate Aerospace
+        Collective UAV Team, I lead a 14-member team inthe development of a six-rotor
+        unmanned aerial vehicle for localized fire suppression applications.
+        The project investigates aircraft configuration, propulsion
+        performance, and structural design to develop a compact,
+        lightweight, and efficient UAV as a part of our debut competition entry for the Vertical Flight Society's 2027
+        Design Build Vertical Flight Competition
+      </p>
+
+      <p class="project-text">
+        My work focuses on systems level design and integration, executive decision-making, and technical leadership. 
+        I'm responsible for overseeing each of our team's subteams, including airframe, payload, electrical, and software.
+        This past semester, I've been focusing on rebuilding our design from scratch from last year's approach by implementing technical and quanitative
+        reasoning behind every design decision, which includes evaluating aircraft configurations,
+        conducting analytical performance trade studies, developing
+        parametric CAD models driven by design requirements and Ansys FEA validations.
+        This semester, our central focus is investigating partially overlapping propeller
+        arrangements as an alternative to conventional hexacopter
+        architectures.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- MAIN UAV CAD RENDER -->
+  <!-- Replace uav-main-render.png with your CAD image -->
+
+  <div class="image-row">
+    <div class="image-item2">
+      <img
+        src="../images/hexoverlap1.png"
+        alt="Full hexacopter CAD assembly"
+        class="project-image2">
+      <p class="image-description">
+        CAD model of overlapping motor airframe assembly.
+      </p>
+    </div>
+  </div>
+
+
+  <!-- =========================
+       CONFIGURATION TRADE STUDY
+  ========================== -->
+
+  <div class="text-row">
+
+    <div class="project-section">
+      <h2>Aircraft Configuration Trade Study</h2>
+
+      <p class="project-text">
+        The first step of this year's design was to develop a trade study
+        in which I did a comparative analysis of various motor-prop-battery combinations 
+        for 4, 5 (very unconventional but wanted to see how it would compare), and 6 rotor configurations, 
+        to finalize the most optimized system for our mission requirements. I then added more detailed weight and 
+        cost considerations to narrow the study to a six-motor configuration. I then conducted a comparative analysis of
+        symmetric (for ease of payload integration)conventional Hex-X,
+        coaxial Y6, and partially overlapping rotors of 5%, 10%, and 15% configurations
+        to evaluate tradeoffs between aircraft footprint,
+        propulsion efficiency, structural complexity,
+        and thrust capability.
+      </p>
+
+      <p class="project-text">
+        The partially overlapping configuration offers a potential
+        compromise between the larger footprint of a conventional
+        hexacopter and the aerodynamic interference associated with
+        fully coaxial rotors. Using a common six-motor propulsion
+        baseline, I evaluated configuration-dependent design
+        considerations to inform subsequent airframe development.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- CONFIGURATION COMPARISON IMAGES -->
+  <!-- Recommended: Hex-X vs Partial Overlap -->
+
+  <div class="image-row">
+
+    <div class="image-item">
+      <img
+        src="../images/techspecs4.png"
+        alt="Conventional Hex-X configuration"
+        class="project-image">
+      <p class="image-description">
+        Airframe Technical Specifications
+      </p>
+    </div>
+
+    <div class="image-item">
+  <iframe
+    src="../images/Airframe-Documentation-26-27.pdf" class="project-image"
+    title="ES51-Final-Report"
+    loading="lazy">
+  </iframe>
+  <p class="image-description">Airframe Trade Study Documentation</p>
+</div>
+
+  </div>
+
+
+  <!-- =========================
+       STRUCTURAL DESIGN & FEA
+  ========================== -->
+
+  <div class="text-row">
+
+    <div class="project-section">
+      <h2>Structural Design & Finite Element Analysis</h2>
+
+      <p class="project-text">
+        I'm developing the hexacopter's structural architecture
+        through parametric CAD modeling in Onshape (ease of team document sharing) and finite element
+        analysis in Ansys. My focus has been on optimizing the rotor arm geometry and material selection
+        to balance structural stiffness, mass, and manufacturability to meet our technical specification for 
+        rigid design to keep arm deflection under 1/500 of the unsupported arm length.
+      </p>
+
+      <p class="project-text">
+        As we're currently running CFD simulations in Ansys to analyze the airflow and disturbances 
+        caused by our overlapping propeller configurations, I'm also investigating the impact of 
+        these aerodynamic interferences on the structural performance of the rotor arms and overall airframe, 
+        which includes evaluating stress concentrations and potential failure points under representative loading conditions.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Ansys FEA IMAGES -->
+  <!-- Arm displacement and stress contours -->
+
+  <div class="image-row">
+
+    <div class="image-item">
+      <img
+        src="../images/deform1.png"
+        alt="Ansys arm deflection simulation"
+        class="project-image">
+      <p class="image-description">
+        FEA of rotor arm displacement
+        under representative thrust loading.
+      </p>
+    </div>
+
+    <div class="image-item">
+      <img
+        src="../images/stress1.png"
+        alt="Ansys structural stress analysis"
+        class="project-image">
+      <p class="image-description">
+        Structural stress distribution and load transfer
+        through the rotor arm.
+      </p>
+    </div>
+
+  </div>
+
+
+  <!-- =========================
+       EXPERIMENTAL VALIDATION
+  ========================== -->
+
+  <div class="text-row">
+
+    <div class="project-section">
+      <h2>Experimental Validation & Thrust Stand Development</h2>
+
+      <p class="project-text">
+        To validate propulsion performance assumptions,
+        our team is developing an instrumented thrust stand
+        capable of measuring static thrust and electrical
+        power consumption across motor operating conditions as well as interferences
+        between an second prop and any reductions in performance by way of the overlapping propeller.
+      </p>
+
+      <p class="project-text">
+        The system is intended to characterize
+        motor-propeller performance for our exact use-case, determine thrust-to-power
+        relationships, and provide empirical data for refining
+        aircraft configuration and propulsion models moving forward.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- THRUST STAND IMAGES -->
+
+ 
+   
+
+  <!-- =========================
+       SYSTEM INTEGRATION
+  ========================== -->
+
+  <div class="text-row">
+
+    <div class="project-section">
+      <h2>System Integration & Ongoing Development</h2>
+
+      <p class="project-text">
+        In parallel with analytical and structural development,
+        I'm supporting payload development in which we must create a solution
+        to collecting, distributing, retrieving, and landing a 3lb payload (filled water container), representing both
+        fire retardant distribution and victim rescue. Additionally I also oversee all other
+        aspects of hardware selection,
+        mechanical integration, electronics troubleshooting,
+        and component compatibility assessment and am currently running flat avionics tests on a power supply to ensure safety in 
+        our electronics in a controlled environment before wiring them to our low-fidelity prototype.
+      </p>
+
+      <div class="image-row">
+    <div class="image-item2">
+      <img
+        src="../images/flatavionics.png"
+        alt="Flat avionics tests"
+        class="project-image2">
+      <p class="image-description">
+        Flat avionics tests for safety validation.
+      </p>
+    </div>
+  </div>
+
+  <div class="text-row">
+      <p class="project-text">
+        Ongoing work includes refining the partial-overlap
+        configurations, evaluating structural performance
+        under representative loading conditions, and
+        preparing for experimental and physicalpropulsion validation.
+        Our ultimate objective is to integrate these findings
+        into a mechanically robust and efficient UAV
+        architecture suitable for the intended mission in April.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- FINAL AIRCRAFT ASSEMBLY IMAGE -->
+
+  <div class="image-row">
+    <div class="image-item2">
+      <img
+        src="../images/hexoverlapside.png"
+        alt="Integrated Partial Overlap Hexacopter assembly"
+        class="project-image2">
+      <p class="image-description">
+        Integrated aircraft design and ongoing system development.
+      </p>
+    </div>
+  </div>
+
+</main>
+
+</body>
+</html>
