@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="../images/tool2.svg" type="image/svg+xml">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aerostructures Independent Research</title>
+  <link rel="stylesheet" href="../style.css" />
+
+  <style>
+    /* AEROFRAME PAGE ONLY */
+
+    /* Consistent spacing between sections */
+    .aeroframe-page .text-row {
+      gap: 0;
+      margin-bottom: 20px;
+    }
+
+    .aeroframe-page .project-section {
+      margin-top: 12px;
+      margin-bottom: 12px;
+    }
+
+    .aeroframe-page .project-text {
+      line-height: 1.7;
+      margin-bottom: 12px;
+    }
+
+    .aeroframe-page .project-text:last-child {
+      margin-bottom: 0;
+    }
+
+    .aeroframe-page .project-section h2 {
+      margin-bottom: 14px;
+    }
+
+    .aeroframe-page .project-section h3 {
+      margin: 20px 0 8px;
+      font-size: 1.05rem;
+    }
+
+    .aeroframe-page .research-meta {
+      color: #aaa;
+      font-size: 0.9rem;
+      margin-top: 12px;
+      line-height: 1.7;
+    }
+
+    .aeroframe-page .research-list {
+      margin: 12px 0 20px 20px;
+      line-height: 1.8;
+    }
+
+    .aeroframe-page .research-list li {
+      margin-bottom: 8px;
+    }
+
+    .aeroframe-page .research-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 0.9rem;
+    }
+
+    .aeroframe-page .research-table th,
+    .aeroframe-page .research-table td {
+      text-align: left;
+      padding: 12px;
+      border-bottom: 1px solid #555;
+      vertical-align: top;
+    }
+
+    .aeroframe-page .research-table th {
+      color: #ddd;
+      font-weight: 600;
+    }
+
+    .aeroframe-page .phase-status {
+      color: #aaa;
+      font-size: 0.85rem;
+      font-style: italic;
+      margin-bottom: 16px;
+    }
+
+    .aeroframe-page .research-equation {
+      text-align: center;
+      font-size: 1.15rem;
+      padding: 20px;
+      margin: 18px 0;
+      border-top: 1px solid #444;
+      border-bottom: 1px solid #444;
+      overflow-x: auto;
+    }
+
+    .aeroframe-page .research-note {
+      color: #aaa;
+      font-size: 0.85rem;
+      line-height: 1.7;
+      margin-top: 12px;
+    }
+
+    .aeroframe-page .research-figure {
+      margin: 24px 0;
+    }
+
+    .aeroframe-page .research-figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    .aeroframe-page .research-figure figcaption {
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+
+    .aeroframe-page .research-link {
+      color: #ddd;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .aeroframe-page .research-link:hover {
+      color: #fff;
+    }
+
+    /* PDF VIEWER */
+    .aeroframe-page .pdf-row {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 24px 0 36px;
+    }
+
+    .aeroframe-page .pdf-container {
+      width: min(965px, 100%);
+      text-align: center;
+    }
+
+    .aeroframe-page .research-pdf {
+      display: block;
+      width: 100%;
+      height: 800px;
+      border: 1px solid #555;
+      border-radius: 10px;
+    }
+
+    .aeroframe-page .pdf-caption {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #c7c7c7;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .aeroframe-page .research-table {
+        font-size: 0.78rem;
+      }
+
+      .aeroframe-page .research-table th,
+      .aeroframe-page .research-table td {
+        padding: 8px 5px;
+      }
+
+      .aeroframe-page .research-pdf {
+        height: 500px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="navbar">
+  <a href="../index.html" class="nav-left">← Back</a>
+  <h1 class="nav-title">Chloe Bednar</h1>
+
+  <div class="nav-icons">
+    <a href="https://www.linkedin.com/in/chloe-bednar-7382b7295"
+       target="_blank" rel="noopener">
+      <img src="../images/linkedin.svg"
+           alt="LinkedIn" class="linkedin-icon">
+    </a>
+
+    <a href="https://gocrimson.com/sports/womens-lacrosse/roster/chloe-bednar/31644"
+       target="_blank" rel="noopener">
+      <img src="../images/h-removebg-preview.png"
+           alt="Harvard Athletics" class="harvard-icon">
+    </a>
+  </div>
+</header>
+
+<main class="project-page aeroframe-page">
+
+  <!-- PROJECT TITLE & OVERVIEW -->
+  <div class="text-row">
+    <div class="project-section">
+      <h1>Aerostructures Independent Research</h1>
+    </div>
+
+    <div class="project-section">
+      <h2>Project Overview</h2>
+
+      <p class="project-text">
+        AEROFRAME is an independent research investigation
+        driven by my interest in aerostructural design,
+        computational aerodynamics, and unconventional
+        aircraft configurations.
+      </p>
+
+      <p class="project-text">
+        The project investigates whether intentional
+        structural cavities within an aircraft can
+        improve overall aerodynamic and propulsive
+        efficiency while maintaining sufficient
+        structural integrity. Specifically, I'm exploring
+        a bifurcated, flow-through aircraft configuration
+        incorporating a centrally aligned rear-mounted
+        turbofan. The proposed geometry allows incoming
+        airflow to pass through a central cavity before
+        reaching the engine inlet.
+      </p>
+
+      <p class="project-text">
+        The central objective is to determine whether
+        modifying the aircraft's upstream geometry
+        can improve engine inlet flow conditions and
+        aircraft-level efficiency relative to a
+        conventional enclosed configuration and the
+        investigation combines aerodynamic modeling,
+        structural analysis, parametric geometry
+        optimization, and planned experimental validation.
+      </p>
+    </div>
+  </div>
+
+  <!-- DESIGN CONCEPT IMAGE -->
+  <div class="image-row">
+    <div class="image-item2">
+      <img
+        src="../images/designconcept.png"
+        alt="Conventional and intentional cavity aircraft comparison"
+        class="project-image2"
+        loading="lazy"
+      />
+
+      <p class="image-description">
+        Preliminary comparison of conventional
+        enclosed and bifurcated flow-through
+        aircraft configurations
+      </p>
+    </div>
+  </div>
+
+  <!-- RESEARCH HYPOTHESIS -->
+  <div class="text-row">
+    <div class="project-section">
+      <h2>Research Hypothesis</h2>
+
+      <p class="project-text">
+        A bifurcated, flow-through aircraft configuration
+        with a centrally aligned rear-mounted turbofan
+        inlet may improve aircraft-level aeropropulsive
+        efficiency by modifying the upstream flow field
+        and reducing aerodynamic losses associated
+        with conventional enclosed airframe geometries.
+      </p>
+
+      <p class="project-text">
+        Through optimization of cavity cross-sectional
+        area, longitudinal curvature, and inlet
+        transition geometry, the configuration may
+        achieve favorable inlet total-pressure recovery
+        and flow uniformity while maintaining acceptable
+        aerodynamic drag, structural mass, bending
+        stiffness, and torsional rigidity.
+        This investigation seeks to determine whether
+        the aerodynamic and propulsive benefits of an
+        integrated flow-through configuration outweigh
+        additional wetted-area drag, flow interference,
+        and structural penalties introduced by the cavity.
+      </p>
+
+      <h3>Primary Research Question</h3>
+      <p class="project-text">
+        Can an aerodynamically optimized bifurcated
+        airframe improve rear-mounted turbofan inlet
+        performance and overall aircraft efficiency
+        relative to a conventional enclosed configuration?
+      </p>
+
+      <h3>Secondary Research Question</h3>
+      <p class="project-text">
+        Can these aerodynamic and propulsive benefits
+        be achieved without unacceptable reductions
+        in structural stiffness, strength, or
+        mass efficiency?
+      </p>
+    </div>
+  </div>
+
+  <!-- AERODYNAMIC CONSIDERATIONS -->
+  <div class="text-row">
+    <div class="project-section">
+      <h2>Aerodynamic Design Considerations</h2>
+
+      <p class="project-text">
+        Introducing a flow-through cavity changes
+        several interacting aerodynamic characteristics.
+        A reduction in frontal blockage does not
+        necessarily produce a reduction in total drag,
+        particularly when additional internal surfaces
+        and flow interactions are introduced.
+      </p>
+
+      <h3>Frontal Blockage</h3>
+      <p class="project-text">
+        Removing portions of the enclosed airframe
+        may reduce projected frontal blockage.
+        However, the resulting pressure distribution
+        and drag depend on the complete external
+        geometry rather than frontal area alone.
+      </p>
+
+      <h3>Wetted Surface Area</h3>
+      <p class="project-text">
+        Flow-through cavities introduce additional
+        surfaces exposed to the freestream.
+        Boundary-layer development along these
+        surfaces produces skin-friction drag,
+        which must be considered when evaluating
+        the potential benefits of the geometry.
+      </p>
+
+      <div class="research-equation">
+        D<sub>f</sub> =
+        C<sub>f</sub>
+        (½ρV<sup>2</sup>)
+        S<sub>wet</sub>
+      </div>
+
+      <h3>Interference Drag</h3>
+      <p class="project-text">
+        The intersection of cavity walls, structural
+        members, and the engine inlet may introduce
+        local pressure gradients, boundary-layer
+        thickening, flow separation, and vortical
+        structures that increase aerodynamic losses.
+      </p>
+
+      <h3>Engine Inlet Flow Quality</h3>
+      <p class="project-text">
+        Because the proposed cavity terminates near
+        a rear-mounted turbofan inlet, its geometry
+        may influence the velocity distribution,
+        total-pressure recovery, and flow angularity
+        of air entering the propulsion system.
+        The objective is not simply to accelerate
+        airflow toward the engine, but to deliver
+        favorable inlet conditions while minimizing
+        losses and maintaining acceptable flow uniformity.
+      </p>
+    </div>
+  </div>
+
+  <!-- PRELIMINARY AIRCRAFT PARAMETERS -->
+  <div class="text-row">
+    <div class="project-section">
+      <h2>Preliminary Aircraft Design Parameters</h2>
+
+      <p class="project-text">
+        Initial aircraft sizing establishes a
+        high-altitude, high-subsonic reference
+        configuration for the investigation.
+        The Northrop Grumman RQ-4B Global Hawk
+        and Gulfstream G650 serve as reference
+        aircraft for mass, geometric scale,
+        and cruise performance.
+      </p>
+
+      <div class="image-row">
+        <div class="image-item">
+          <img
+            src="../images/gulfstream.png"
+            alt="Gulfstream G650"
+            class="project-image"
+            loading="lazy"
+          />
+          <p class="image-description">
+            Gulfstream G650 Reference Aircraft
+          </p>
+        </div>
+
+        <div class="image-item">
+          <img
+            src="../images/globalhawk.png"
+            alt="RQ-4B Global Hawk"
+            class="project-image"
+            loading="lazy"
+          />
+          <p class="image-description">
+            Northrop Grumman RQ-4B Global Hawk
+          </p>
+        </div>
+      </div>
+
+      <table class="research-table">
+        <thead>
+          <tr>
+            <th>Parameter</th>
+            <th>Preliminary Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cruise Mach Number</td>
+            <td>0.85</td>
+          </tr>
+          <tr>
+            <td>Cruise Altitude</td>
+            <td>11,000 m</td>
+          </tr>
+          <tr>
+            <td>Target Lift Coefficient</td>
+            <td>0.40</td>
+          </tr>
+          <tr>
+            <td>Reference Aircraft Mass</td>
+            <td>30,000 kg</td>
+          </tr>
+          <tr>
+            <td>Preliminary Wingspan</td>
+            <td>30 m</td>
+          </tr>
+          <tr>
+            <td>Preliminary Wing Area</td>
+            <td>64.3 m²</td>
+          </tr>
+          <tr>
+            <td>Freestream Velocity</td>
+            <td>250.8 m/s</td>
+          </tr>
+          <tr>
+            <td>Air Density at Cruise</td>
+            <td>0.3639 kg/m³</td>
+          </tr>
+          <tr>
+            <td>Cruise Dynamic Pressure</td>
+            <td>11.45 kPa</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="research-note">
+        These values represent preliminary cruise-sizing
+        assumptions and don't constitute finalized
+        aircraft design.
+      </p>
+    </div>
+  </div>
+
+  <!-- AIRFOIL SCREENING -->
+  <div class="text-row">
+    <div class="project-section">
+      <h2>Airfoil Screening & Optimization</h2>
+
+      <p class="project-text">
+        The initial aerodynamic investigation focuses
+        on screening candidate airfoil geometries using
+        XFOIL. Candidate profiles are evaluated across
+        prescribed Reynolds numbers, lift coefficients,
+        and angles of attack to establish preliminary
+        sectional aerodynamic characteristics.
+        Initial candidate airfoils include NACA 0012,
+        NACA 2412, NACA 64-210, and NASA SC(2)-0410.
+      </p>
+
+      <h3>Airfoil Evaluation Parameters</h3>
+
+      <ul class="research-list">
+        <li>Lift coefficient and lift-curve slope</li>
+        <li>
+          Profile drag at a target lift coefficient of 0.40
+        </li>
+        <li>Lift-to-drag ratio and aerodynamic efficiency</li>
+        <li>Pitching moment and associated trim requirements</li>
+        <li>
+          Thickness-to-chord ratio and structural
+          integration constraints
+        </li>
+        <li>
+          Surface pressure distributions, suction peaks,
+          and pressure recovery
+        </li>
+        <li>Maximum lift coefficient and stall characteristics</li>
+      </ul>
+
+      <p class="project-text">
+        XFOIL results will be used to narrow the candidate
+        airfoil geometries before progressing to
+        three-dimensional aerodynamic modeling.
+        Because the intended cruise condition is Mach 0.85,
+        XFOIL is being used for preliminary screening rather
+        than definitive transonic analysis. Shock formation,
+        compressibility effects, and wave drag will require
+        subsequent higher-fidelity CFD simulations.
+      </p>
+    </div>
+  </div>
+
+  <!-- INSERT XFOIL RESULTS HERE -->
+  <!--
+  <div class="image-row">
+    <div class="image-item2">
+      <img
+        src="../images/aeroframe-xfoil.png"
+        alt="XFOIL aerodynamic polar comparison"
+        class="project-image2"
+        loading="lazy"
+      />
+      <p class="image-description">
+        Airfoil drag polar and lift coefficient comparison.
+      </p>
+    </div>
+  </div>
+  -->
+
+  <!-- 3D AERODYNAMIC MODELING -->
+  <div class="text-row">
+    <div class="project-section">
+      <h2>3D Aerodynamic Modeling</h2>
+
+      <p class="project-text">
+        Following preliminary airfoil screening,
+        the investigation will progress to
+        three-dimensional aerodynamic modeling using
+        XFLR5. This stage will examine wing planform
+        geometry, spanwise lift distribution, aspect ratio,
+        and induced drag under conditions appropriate
+        for preliminary low-speed aerodynamic analysis.
+        A full parametric aircraft model will then be
+        developed to compare conventional enclosed
+        and bifurcated flow-through configurations.
+        Both configurations will incorporate a centrally
+        located rear-mounted turbofan inlet to establish
+        a consistent basis for evaluating airframe-propulsion
+        interactions.
+      </p>
+
+      <h3>Geometric Design Variables</h3>
+
+      <ul class="research-list">
+        <li>Cavity width and height</li>
+        <li>Cavity cross-sectional area</li>
+        <li>Longitudinal cavity curvature</li>
+        <li>Cavity convergence and divergence</li>
+        <li>Engine inlet transition geometry</li>
+        <li>Structural branching configuration</li>
+        <li>Distribution of load-bearing members</li>
+      </ul>
+
+      <p class="project-text">
+        The goal is to establish geometrically consistent
+        configurations for comparative aerodynamic
+        and structural evaluation.
+      </p>
+    </div>
+  </div>
+
+  <!-- RESEARCH DOCUMENTATION -->
+  <div class="text-row">
+    <div class="project-section">
+      <h2>Research Documentation</h2>
+
+      <p class="project-text">
+        The working research document contains preliminary
+        aircraft sizing calculations, aerodynamic considerations,
+        candidate airfoil selection criteria, and the evolving
+        investigation methodology.
+      </p>
+    </div>
+  </div>
+
+  <div class="pdf-row">
+    <div class="pdf-container">
+      <iframe
+        src="../images/AEROFRAME-Independent Research Study V1.pdf"
+        class="research-pdf"
+        title="AEROFRAME Independent Research Study"
+        loading="lazy">
+      </iframe>
+
+      <p class="pdf-caption">
+        AEROFRAME Independent Research Study Documentation
+      </p>
+    </div>
+  </div>
+
+  <!-- ENGINE INLET INTEGRATION -->
+  <div class="text-row">
+    <div class="project-section">
+      <h2>Engine Inlet Integration & Flow Optimization</h2>
+
+      <p class="project-text">
+        A central component of AEROFRAME is investigating
+        how the upstream airframe geometry influences
+        airflow delivered to a rear-mounted turbofan engine.
+        The proposed configuration positions the engine inlet
+        near the downstream opening of the central cavity,
+        allowing the cavity geometry to influence the incoming
+        flow field. Preliminary inlet sizing will be established
+        using a representative turbofan operating point,
+        including required engine mass flow and inlet capture area.
+      </p>
+
+      <h3>Engine Mass-Flow Requirements</h3>
+
+      <p class="project-text">
+        A simplified inlet capture-area estimate can be
+        obtained from the continuity equation:
+      </p>
+
+      <div class="research-equation">
+        ṁ = ρAV
+      </div>
+
+      <p class="project-text">
+        The relationship between required engine mass flow,
+        local air density, and flow velocity will inform
+        preliminary cavity and inlet sizing.
+      </p>
+
+      <h3>Total-Pressure Recovery</h3>
+
+      <p class="project-text">
+        Inlet total-pressure recovery will be evaluated
+        to determine how effectively the cavity preserves
+        incoming flow total pressure.
+      </p>
+
+      <div class="research-equation">
+        π<sub>d</sub> =
+        P<sub>t,inlet</sub> /
+        P<sub>t,∞</sub>
+      </div>
+
+      <p class="project-text">
+        Higher total-pressure recovery generally indicates
+        lower inlet losses, although pressure recovery alone
+        does not determine overall propulsive efficiency.
+      </p>
+
+      <h3>Inlet Flow Distortion</h3>
+
+      <p class="project-text">
+        In addition to average pressure recovery, the
+        investigation will evaluate nonuniformities in
+        total pressure and velocity distributions entering
+        the engine. Circumferential and radial pressure
+        distortion, flow angularity, and localized separation
+        will be considered when assessing inlet flow quality.
+      </p>
+
+      <h3>Primary Inlet Performance Metrics</h3>
+
+      <table class="research-table">
+        <thead>
+          <tr>
+            <th>Metric</th>
+            <th>Evaluation Objective</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Total-Pressure Recovery</td>
+            <td>Minimize inlet pressure losses</td>
+          </tr>
+          <tr>
+            <td>Inlet Distortion</td>
+            <td>Improve flow uniformity</td>
+          </tr>
+          <tr>
+            <td>Flow Angularity</td>
+            <td>Limit undesirable inlet swirl</td>
+          </tr>
+          <tr>
+            <td>Mass-Flow Capture</td>
+            <td>Meet engine airflow requirements</td>
+          </tr>
+          <tr>
+            <td>Flow Separation</td>
+            <td>Minimize separated flow regions</td>
+          </tr>
+          <tr>
+            <td>Aircraft Drag</td>
+            <td>Minimize overall aerodynamic losses</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ANSYS CFD AND FEA -->
+  <div class="text-row">
+    <div class="project-section">
+      <h2>Computational Fluid & Structural Analysis</h2>
+
+      <p class="project-text">
+        Full-aircraft configurations will be evaluated
+        using ANSYS computational fluid dynamics and
+        finite element analysis to quantify aerodynamic,
+        propulsion-integration, and structural performance.
+      </p>
+
+      <h3>CFD</h3>
+
+      <p class="project-text">
+        Compressible-flow simulations will investigate
+        airflow through the central cavity and into the
+        rear-mounted turbofan inlet. The analysis will
+        examine pressure distributions, velocity fields,
+        shock formation, boundary-layer development,
+        flow separation, and interference effects.
+        Engine inlet boundary conditions will be established
+        using a representative engine operating point to
+        maintain consistent mass-flow requirements across
+        the candidate geometries. Simulations will compare
+        total-pressure recovery, inlet distortion, aerodynamic
+        drag, and sensitivity to changes in cavity geometry
+        and angle of attack.
+      </p>
+
+      <h3>Finite Element Analysis</h3>
+
+      <p class="project-text">
+        Structural simulations will evaluate stress
+        distributions, deformation, bending stiffness,
+        torsional rigidity, and potential failure regions
+        under representative aerodynamic loading conditions.
+        Particular attention will be given to structural
+        load paths surrounding the central cavity, where
+        the removal of enclosed material may introduce
+        stress concentrations or reduce stiffness.
+        Structural mass and stiffness will be compared
+        against the enclosed baseline to determine whether
+        aerodynamic improvements justify the associated
+        structural trade-offs.
+      </p>
+
+      <p class="project-text">
+        Comparative simulations will evaluate the
+        relationship between inlet performance,
+        aircraft drag, structural mass, and stiffness.
+        The ultimate objective is to identify configurations
+        that improve overall aircraft-level performance
+        rather than optimizing isolated aerodynamic
+        or structural characteristics.
+      </p>
+    </div>
+  </div>
+
+  <!-- INSERT ANSYS CFD IMAGE HERE -->
+  <!--
+  <div class="image-row">
+    <div class="image-item2">
+      <img
+        src="../images/aeroframe-ansys-cfd.png"
+        alt="ANSYS compressible CFD results"
+        class="project-image2"
+        loading="lazy"
+      />
+      <p class="image-description">
+        Compressible-flow simulation of the
+        bifurcated airframe and rear-mounted inlet.
+      </p>
+    </div>
+  </div>
+  -->
+
+  <!-- INSERT ANSYS FEA IMAGE HERE -->
+  <!--
+  <div class="image-row">
+    <div class="image-item2">
+      <img
+        src="../images/aeroframe-ansys-fea.png"
+        alt="ANSYS structural simulation results"
+        class="project-image2"
+        loading="lazy"
+      />
+      <p class="image-description">
+        Structural stress and deformation
+        analysis of the flow-through configuration.
+      </p>
+    </div>
+  </div>
+  -->
+
+  <!-- EXPERIMENTAL VALIDATION -->
+  <div class="text-row">
+    <div class="project-section">
+      <h2>Experimental Validation</h2>
+
+      <p class="project-text">
+        Following computational evaluation, selected
+        aircraft configurations will be fabricated as
+        scaled physical models using additive manufacturing.
+        I plan to design and construct a desktop wind tunnel
+        to experimentally investigate aerodynamic performance
+        and airflow behavior across the candidate configurations.
+        The experimental setup will incorporate a controlled
+        suction system or simplified inlet flow simulation
+        to investigate airflow entering the rear-mounted
+        engine inlet. Testing will focus on comparative
+        aerodynamic forces, inlet pressure distributions,
+        flow behavior, and sensitivity to changes in cavity
+        geometry. Experimental results will be compared
+        against corresponding low-speed computational
+        predictions to evaluate model accuracy and guide
+        subsequent design iterations. Reynolds-number
+        similarity, tunnel blockage, model scaling, and
+        measurement uncertainty will be considered during testing.
+      </p>
+    </div>
+  </div>
+
+  <!-- CURRENT PROGRESS -->
+  <div class="text-row">
+    <div class="project-section">
+      <h2>Current Progress</h2>
+
+      <p class="project-text">
+        AEROFRAME is currently in the preliminary
+        aerodynamic design and airfoil screening stage.
+        My initial work has focused on defining the research
+        hypothesis, establishing reference flight conditions,
+        performing preliminary aircraft sizing calculations,
+        and developing aerodynamic evaluation criteria.
+        Current analysis involves screening candidate airfoil
+        geometries in XFOIL, with subsequent work planned
+        in XFLR5, parametric CAD modeling, ANSYS CFD/FEA,
+        and scaled experimental validation. As the
+        investigation progresses, computational results,
+        aerodynamic comparisons, structural simulations,
+        and experimental findings will be incorporated
+        into this project documentation.
+      </p>
+    </div>
+  </div>
+
+</main>
+
+</body>
+</html>
