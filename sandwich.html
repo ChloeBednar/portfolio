@@ -1,0 +1,823 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="../images/tool2.svg" type="image/svg+xml">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UAV Sandwich Panel Optimization | Chloe Bednar</title>
+  <link rel="stylesheet" href="../style.css" />
+
+  <style>
+    /* SANDWICH PANEL PAGE ONLY */
+
+    .sandwich-page .text-row {
+      gap: 0;
+      margin-bottom: 24px;
+    }
+
+    .sandwich-page .project-section {
+      margin-top: 12px;
+      margin-bottom: 12px;
+    }
+
+    .sandwich-page .project-text {
+      line-height: 1.7;
+      margin-bottom: 12px;
+    }
+
+    .sandwich-page .project-text:last-child {
+      margin-bottom: 0;
+    }
+
+    .sandwich-page .project-section h2 {
+      margin-bottom: 14px;
+    }
+
+    .sandwich-page .project-section h3 {
+      margin: 20px 0 8px;
+      font-size: 1.05rem;
+    }
+
+    .sandwich-page .research-meta {
+      color: #aaa;
+      font-size: 0.9rem;
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+
+    .sandwich-page .research-list {
+      margin: 12px 0 18px 20px;
+      line-height: 1.7;
+    }
+
+    .sandwich-page .research-list li {
+      margin-bottom: 6px;
+    }
+
+    .sandwich-page .research-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      font-size: 0.9rem;
+    }
+
+    .sandwich-page .research-table th,
+    .sandwich-page .research-table td {
+      text-align: left;
+      padding: 12px;
+      border-bottom: 1px solid #555;
+      vertical-align: top;
+    }
+
+    .sandwich-page .research-table th {
+      color: #ddd;
+      font-weight: 600;
+    }
+
+    .sandwich-page .research-note {
+      color: #aaa;
+      font-size: 0.85rem;
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+
+    .sandwich-page .research-equation {
+      text-align: center;
+      font-size: 1.2rem;
+      padding: 16px;
+      margin: 16px 0;
+      border-top: 1px solid #444;
+      border-bottom: 1px solid #444;
+    }
+
+    /* IMAGE SPACING */
+
+    .sandwich-page .image-row {
+      margin: 16px 0 28px;
+    }
+
+    .sandwich-page .image-description {
+      margin-top: 8px;
+    }
+
+    /* OPTIONAL FULL-WIDTH DOCUMENT VIEWER */
+
+    .sandwich-page .pdf-row {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 20px 0 32px;
+    }
+
+    .sandwich-page .pdf-container {
+      width: min(965px, 100%);
+      text-align: center;
+    }
+
+    .sandwich-page .research-pdf {
+      display: block;
+      width: 100%;
+      height: 700px;
+      border: 1px solid #555;
+      border-radius: 10px;
+    }
+
+    .sandwich-page .pdf-caption {
+      margin-top: 8px;
+      font-size: 0.9rem;
+      color: #c7c7c7;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .sandwich-page .research-table {
+        font-size: 0.78rem;
+      }
+
+      .sandwich-page .research-table th,
+      .sandwich-page .research-table td {
+        padding: 8px 5px;
+      }
+
+      .sandwich-page .research-pdf {
+        height: 450px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="navbar">
+  <a href="../index.html" class="nav-left">← Back</a>
+  <h1 class="nav-title">Chloe Bednar</h1>
+
+  <div class="nav-icons">
+    <a
+      href="https://www.linkedin.com/in/chloe-bednar-7382b7295"
+      target="_blank"
+      rel="noopener"
+    >
+      <img
+        src="../images/linkedin.svg"
+        alt="LinkedIn"
+        class="linkedin-icon"
+      />
+    </a>
+
+    <a
+      href="https://gocrimson.com/sports/womens-lacrosse/roster/chloe-bednar/31644"
+      target="_blank"
+      rel="noopener"
+    >
+      <img
+        src="../images/h-removebg-preview.png"
+        alt="Harvard Athletics"
+        class="harvard-icon"
+      />
+    </a>
+  </div>
+</header>
+
+<main class="project-page sandwich-page">
+
+  <!-- =========================
+       PROJECT OVERVIEW
+  ========================== -->
+
+  <div class="text-row">
+    <div class="project-section">
+      <h1>UAV Sandwich Panel Geometry Optimization</h1>
+    </div>
+
+    <div class="project-section">
+      <h2>Project Overview</h2>
+
+      <p class="project-text">
+        This project investigates how the internal
+        geometry of lightweight sandwich panels
+        influences structural stiffness, load-bearing
+        capacity, failure behavior, and mass efficiency
+        for unmanned aerial vehicle applications.
+        Conducted in collaboration with Genevieve Hill
+        as part of Harvard's ES192 Materials Selection
+        and Design course, the investigation combines
+        parametric CAD modeling, additive manufacturing,
+        finite element analysis, and experimental
+        mechanical testing.
+      </p>
+
+      <p class="project-text">
+        The study compares four additively manufactured
+        lattice-core geometries against a conventional
+        aramid-paper honeycomb reference. By evaluating
+        different internal load-bearing architectures
+        under consistent dimensional and loading
+        conditions, the project aims to identify
+        configurations that maximize bending stiffness
+        and load capacity relative to structural mass.
+      </p>
+    </div>
+  </div>
+
+  <!-- IMAGE: SANDWICH PANEL OVERVIEW -->
+  <!--
+  <div class="image-row">
+    <div class="image-item2">
+      <img
+        src="../images/sandwich-overview.png"
+        alt="Sandwich panel structural concept"
+        class="project-image2"
+        loading="lazy"
+      />
+      <p class="image-description">
+        Sandwich panel construction with
+        CFRP face sheets and lattice core.
+      </p>
+    </div>
+  </div>
+  -->
+
+  <!-- =========================
+       ENGINEERING OBJECTIVE
+  ========================== -->
+
+  <div class="text-row">
+    <div class="project-section">
+      <h2>Engineering Objective</h2>
+
+      <p class="project-text">
+        Aerospace sandwich panels use stiff outer
+        face sheets separated by a lightweight core
+        to resist bending without the mass penalty
+        of a solid structure. The face sheets
+        primarily carry bending-induced tensile
+        and compressive stresses, while the core
+        maintains separation between the skins
+        and transfers transverse shear loads.
+        Core geometry therefore plays an important
+        role in overall panel stiffness, stability,
+        and structural efficiency.
+      </p>
+
+      <p class="project-text">
+        The primary objective is to determine
+        which internal lattice configuration
+        provides the greatest bending stiffness
+        and load-bearing capacity relative
+        to specimen mass. The investigation
+        also considers whether geometries
+        that improve absolute stiffness
+        introduce additional mass or
+        manufacturing complexity that
+        reduces their practical benefit.
+      </p>
+
+      <h3>Performance Metrics</h3>
+
+      <ul class="research-list">
+        <li>Bending stiffness</li>
+        <li>Maximum load capacity</li>
+        <li>Specimen mass</li>
+        <li>Specific stiffness</li>
+        <li>Structural failure mode</li>
+        <li>Manufacturability and dimensional accuracy</li>
+      </ul>
+
+      <h3>Specific Stiffness</h3>
+
+      <p class="project-text">
+        Because the candidate geometries contain
+        different quantities of material,
+        stiffness alone is not sufficient
+        for comparing structural efficiency.
+        The measured load-displacement stiffness
+        will therefore be normalized by
+        specimen mass.
+      </p>
+
+      <div class="research-equation">
+        k = F / δ
+      </div>
+
+      <div class="research-equation">
+        Specific Stiffness = k / m
+      </div>
+
+    </div>
+  </div>
+
+  <!-- =========================
+       CORE GEOMETRY DESIGN
+  ========================== -->
+
+  <div class="text-row">
+    <div class="project-section">
+      <h2>Core Geometry Design</h2>
+
+      <p class="project-text">
+        Four alternative lattice architectures
+        were selected for comparison against
+        a conventional aramid-paper honeycomb
+        core. Each geometry uses a different
+        internal arrangement of structural
+        members or surfaces, allowing the
+        investigation to evaluate the influence
+        of topology on load distribution,
+        deformation, and structural efficiency.
+      </p>
+
+      <table class="research-table">
+        <thead>
+          <tr>
+            <th>Geometry</th>
+            <th>Structural Characteristics</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Aramid Honeycomb</td>
+            <td>
+              Conventional sandwich-core
+              reference configuration.
+            </td>
+          </tr>
+
+          <tr>
+            <td>Triangular Lattice</td>
+            <td>
+              Triangulated network of
+              interconnected load-bearing members.
+            </td>
+          </tr>
+
+          <tr>
+            <td>Reinforced Kelvin Lattice</td>
+            <td>
+              Cellular lattice incorporating
+              additional structural reinforcement.
+            </td>
+          </tr>
+
+          <tr>
+            <td>Gyroidal Structure</td>
+            <td>
+              Continuous interconnected
+              surface-based architecture.
+            </td>
+          </tr>
+
+          <tr>
+            <td>Reinforced Auxetic Truss</td>
+            <td>
+              Reinforced re-entrant lattice
+              geometry with potential
+              auxetic deformation behavior.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="project-text">
+        Individual unit cells have been
+        developed in Onshape using standardized
+        geometric parameters. These unit
+        cells are patterned into larger
+        lattice assemblies for manufacturing
+        and structural evaluation.
+      </p>
+    </div>
+  </div>
+
+  <!-- IMAGE: CORE GEOMETRIES -->
+  <!--
+  <div class="image-row">
+    <div class="image-item2">
+      <img
+        src="../images/sandwich-core-geometries.png"
+        alt="Onshape lattice geometry comparison"
+        class="project-image2"
+        loading="lazy"
+      />
+
+      <p class="image-description">
+        CAD comparison of the selected
+        lattice-core architectures.
+      </p>
+    </div>
+  </div>
+  -->
+
+  <!-- =========================
+       SPECIMEN PARAMETERS
+  ========================== -->
+
+  <div class="text-row">
+    <div class="project-section">
+      <h2>Specimen Design & Materials</h2>
+
+      <p class="project-text">
+        The current specimen design uses
+        standardized lattice dimensions
+        and unit-cell parameters to support
+        controlled comparisons between
+        different geometries. Each lattice
+        is intended to be assembled with
+        carbon-fiber-reinforced polymer
+        face sheets to create a complete
+        sandwich structure.
+      </p>
+
+      <table class="research-table">
+        <thead>
+          <tr>
+            <th>Design Parameter</th>
+            <th>Specification</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Lattice Dimensions</td>
+            <td>75 × 25 × 25 mm</td>
+          </tr>
+
+          <tr>
+            <td>Unit-Cell Dimensions</td>
+            <td>25/3 mm cubic reference cell</td>
+          </tr>
+
+          <tr>
+            <td>Lattice Pattern</td>
+            <td>3 × 3 × 9 unit cells</td>
+          </tr>
+
+          <tr>
+            <td>Nominal Truss Diameter</td>
+            <td>1.5 mm</td>
+          </tr>
+
+          <tr>
+            <td>CFRP Face-Sheet Thickness</td>
+            <td>1 mm</td>
+          </tr>
+
+          <tr>
+            <td>FDM Core Material</td>
+            <td>PLA</td>
+          </tr>
+
+          <tr>
+            <td>SLS Core Material</td>
+            <td>Nylon</td>
+          </tr>
+
+          <tr>
+            <td>Baseline Core</td>
+            <td>Aramid-paper honeycomb</td>
+          </tr>
+        </tbody>
+      </table>
+
+  <!-- =========================
+       CAD AND MANUFACTURING
+  ========================== -->
+
+  <div class="text-row">
+    <div class="project-section">
+      <h2>CAD Development & Prototyping</h2>
+
+      <p class="project-text">
+        Initial development has focused on
+        modeling individual lattice unit cells
+        in Onshape and establishing repeatable
+        geometries for full-scale specimen
+        fabrication. Unit cells were designed
+        according to the specified dimensional
+        constraints and assembled into
+        3 × 3 × 9 lattice patterns.
+      </p>
+
+      <p class="project-text">
+        Preliminary manufacturing trials
+        have been conducted using FDM
+        3D printing. Unit-cell prototypes
+        have been fabricated with and
+        without support structures,
+        and additional specimens have
+        been printed at 1.5 times
+        the nominal scale to investigate
+        manufacturing differences and
+        associated mass changes.
+        Lattice assemblies have also
+        been printed at the intended
+        1:1 scale.
+      </p>
+
+      <p class="project-text">
+        These trials are being used to
+        identify manufacturing constraints
+        associated with thin lattice
+        members, support removal,
+        print orientation, and
+        dimensional accuracy.
+        Subsequent fabrication will
+        involve refining FDM parameters
+        and manufacturing nylon
+        specimens using SLS.
+      </p>
+    </div>
+  </div>
+
+  <!-- IMAGE: ONSHAPE CAD -->
+  <!--
+  <div class="image-row">
+    <div class="image-item2">
+      <img
+        src="../images/sandwich-onshape.png"
+        alt="Onshape lattice CAD models"
+        class="project-image2"
+        loading="lazy"
+      />
+
+      <p class="image-description">
+        Parametric lattice unit-cell
+        and assembly development in Onshape.
+      </p>
+    </div>
+  </div>
+  -->
+
+  <!-- IMAGE: PRINTED PROTOTYPES -->
+  <!--
+  <div class="image-row">
+    <div class="image-item2">
+      <img
+        src="../images/sandwich-prototypes.png"
+        alt="3D printed lattice prototypes"
+        class="project-image2"
+        loading="lazy"
+      />
+
+      <p class="image-description">
+        Initial FDM-printed lattice
+        prototypes and manufacturing trials.
+      </p>
+    </div>
+  </div>
+  -->
+
+  <!-- =========================
+       ANSYS ANALYSIS
+  ========================== -->
+
+  <div class="text-row">
+    <div class="project-section">
+      <h2>Structural Simulation & Failure Analysis</h2>
+
+      <p class="project-text">
+        Preliminary finite element analysis
+        has begun in ANSYS using both
+        individual unit-cell geometries
+        and larger lattice assemblies.
+        Initial simulations investigate
+        bending response, structural
+        deformation, and stress
+        distributions to identify
+        regions where additional
+        reinforcement may improve
+        performance.
+      </p>
+
+      <p class="project-text">
+        Particular attention has been
+        given to the reinforced Kelvin
+        lattice, where simulation results
+        are being used to inform the
+        placement of additional structural
+        members. This process allows
+        potential design modifications
+        to be evaluated before committing
+        to additional manufacturing trials.
+      </p>
+
+      <h3>Buckling & Failure Modes</h3>
+
+      <p class="project-text">
+        The next stage of ANSYS analysis
+        will incorporate buckling loads
+        and more representative boundary
+        conditions to investigate
+        anticipated failure mechanisms.
+        Potential failure modes include
+        localized truss buckling,
+        excessive bending deformation,
+        core shear failure, and
+        instability within reinforced
+        lattice members.
+      </p>
+
+      <h3>Simulation Outputs</h3>
+
+      <ul class="research-list">
+        <li>Stress distributions</li>
+        <li>Maximum structural displacement</li>
+        <li>Effective bending stiffness</li>
+        <li>Potential buckling locations</li>
+        <li>Structural mass</li>
+        <li>Predicted failure regions</li>
+      </ul>
+
+      <p class="project-text">
+        These simulations will provide
+        a basis for comparing the
+        structural behavior of each
+        geometry and will later be
+        evaluated against experimental
+        measurements.
+      </p>
+    </div>
+  </div>
+
+  <!-- IMAGE: ANSYS SIMULATION -->
+  <!--
+  <div class="image-row">
+    <div class="image-item2">
+      <img
+        src="../images/sandwich-ansys.png"
+        alt="ANSYS lattice structural analysis"
+        class="project-image2"
+        loading="lazy"
+      />
+
+      <p class="image-description">
+        ANSYS finite element analysis
+        of lattice deformation and
+        structural stress.
+      </p>
+    </div>
+  </div>
+  -->
+
+  <!-- =========================
+       EXPERIMENTAL TESTING
+  ========================== -->
+
+  <div class="text-row">
+    <div class="project-section">
+      <h2>Mechanical Testing & Validation</h2>
+
+      <p class="project-text">
+        Following fabrication of the
+        remaining lattice configurations
+        and CFRP face sheets, complete
+        sandwich panel specimens will
+        be assembled for comparative
+        mechanical testing.
+        The experimental methodology
+        includes three-point bending
+        using an Instron testing machine
+        to measure applied force,
+        midspan displacement, maximum
+        load capacity, and structural
+        failure behavior.
+      </p>
+
+      <p class="project-text">
+        Specimens will be tested under
+        consistent support and loading
+        conditions, with mass recorded
+        independently to calculate
+        specific stiffness.
+        Repeated specimens will be
+        used to assess variability
+        within each configuration.
+        Results will be compared with
+        ANSYS predictions to evaluate
+        the accuracy of the structural
+        models and identify discrepancies
+        between simulated and
+        observed failure behavior.
+      </p>
+
+      <h3>Experimental Measurements</h3>
+
+      <table class="research-table">
+        <thead>
+          <tr>
+            <th>Measurement</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Force–Displacement Response</td>
+            <td>
+              Determine effective
+              bending stiffness.
+            </td>
+          </tr>
+
+          <tr>
+            <td>Maximum Applied Load</td>
+            <td>
+              Compare load-bearing
+              capacity before failure.
+            </td>
+          </tr>
+
+          <tr>
+            <td>Specimen Mass</td>
+            <td>
+              Calculate specific stiffness.
+            </td>
+          </tr>
+
+          <tr>
+            <td>Failure Mode</td>
+            <td>
+              Identify structural
+              weaknesses and compare
+              against FEA predictions.
+            </td>
+          </tr>
+
+          <tr>
+            <td>Dimensional Accuracy</td>
+            <td>
+              Evaluate manufacturing
+              consistency.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- IMAGE: TESTING -->
+  <!--
+  <div class="image-row">
+    <div class="image-item2">
+      <img
+        src="../images/sandwich-testing.png"
+        alt="Three-point bending testing setup"
+        class="project-image2"
+        loading="lazy"
+      />
+
+      <p class="image-description">
+        Planned three-point bending
+        testing of sandwich panel specimens.
+      </p>
+    </div>
+  </div>
+  -->
+
+  <!-- =========================
+       CURRENT PROGRESS
+  ========================== -->
+
+  <div class="text-row">
+    <div class="project-section">
+      <h2>Current Progress & Next Steps</h2>
+
+      <p class="project-text">
+        Current progress includes
+        parametric development of
+        lattice unit cells in Onshape,
+        preliminary FDM manufacturing
+        trials at nominal and enlarged
+        scales, and initial ANSYS
+        structural simulations.
+        The reinforced Kelvin lattice
+        is being evaluated to identify
+        potential reinforcement locations
+        and improve its bending response.
+      </p>
+
+      <p class="project-text">
+        Upcoming work includes completing
+        the remaining lattice geometries,
+        refining print settings for
+        improved dimensional accuracy,
+        incorporating buckling analysis
+        into ANSYS, manufacturing nylon
+        specimens using SLS, fabricating
+        CFRP face sheets, and assembling
+        complete sandwich panels.
+        Mechanical testing will then
+        be conducted to compare stiffness,
+        mass efficiency, maximum load,
+        and failure behavior across
+        the selected configurations.
+      </p>
+    </div>
+  </div>
+
+</main>
+
+</body>
+</html>
